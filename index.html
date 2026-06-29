@@ -1,355 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>The Understanding Method | The Museum of English</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-
-background:#F7F3EC;
-
-color:#262626;
-
+background:#f6f0e8;
+color:#252321;
 font-family:'Inter',sans-serif;
-
 line-height:1.8;
-
 }
 
 header{
-
-padding:80px 20px;
-
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
+padding:60px 24px;
+background:
+linear-gradient(rgba(246,240,232,.88),rgba(246,240,232,.96)),
+radial-gradient(circle at top left,#c7a06a,transparent 30%),
+radial-gradient(circle at bottom right,#66725a,transparent 30%);
+}
 
-background:#F7F3EC;
+.hero{
+max-width:850px;
+}
 
+.kicker{
+letter-spacing:4px;
+text-transform:uppercase;
+font-size:.8rem;
+color:#7a6652;
+margin-bottom:28px;
 }
 
 h1{
-
 font-family:'Cormorant Garamond',serif;
-
-font-size:4rem;
-
+font-size:4.4rem;
 font-weight:600;
-
-letter-spacing:2px;
-
-margin-bottom:15px;
-
+line-height:1.05;
+margin-bottom:22px;
 }
 
 h2{
-
 font-family:'Cormorant Garamond',serif;
-
-font-size:2rem;
-
+font-size:2.1rem;
 font-weight:400;
-
-color:#6F5E49;
-
-margin-bottom:30px;
-
+color:#6f5e49;
+margin-bottom:28px;
 }
 
 .subtitle{
-
-font-size:1.2rem;
-
-max-width:700px;
-
-margin:auto;
-
-color:#555;
-
+font-size:1.12rem;
+max-width:680px;
+margin:0 auto 38px;
+color:#4d4a46;
 }
 
-.enter-button{
-
+.button{
 display:inline-block;
-
-margin-top:50px;
-
-padding:18px 40px;
-
-border:1px solid #7A6652;
-
+padding:16px 36px;
+border:1px solid #7a6652;
+border-radius:999px;
+color:#7a6652;
 text-decoration:none;
-
-color:#7A6652;
-
-border-radius:40px;
-
-transition:0.4s;
-
 font-weight:500;
-
 }
 
-.enter-button:hover{
-
-background:#7A6652;
-
-color:white;
-
+.button:hover{
+background:#7a6652;
+color:#fff;
 }
 
 section{
-
-max-width:900px;
-
+max-width:1050px;
 margin:auto;
-
-padding:80px 30px;
-
+padding:80px 26px;
 }
 
-.room{
-
-margin-bottom:80px;
-
-}
-
-.room h3{
-
+.section-title{
 font-family:'Cormorant Garamond',serif;
-
-font-size:2rem;
-
-margin-bottom:20px;
-
+font-size:3rem;
+margin-bottom:32px;
 }
 
-.room p{
+.card{
+background:#fffaf4;
+border:1px solid #e0d4c6;
+border-radius:22px;
+padding:28px;
+margin:24px 0;
+box-shadow:0 12px 30px rgba(45,36,28,.06);
+}
 
-font-size:1.05rem;
+.lang-title{
+font-family:'Cormorant Garamond',serif;
+font-size:1.7rem;
+color:#66725a;
+margin-bottom:14px;
+}
 
-margin-bottom:18px;
+.divider{
+height:1px;
+background:#dfd3c4;
+margin:28px 0;
+}
 
+.rooms{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.room-card{
+background:#252321;
+color:#f6f0e8;
+border-radius:22px;
+padding:26px;
+min-height:230px;
+}
+
+.room-card small{
+color:#c7a06a;
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+.room-card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:1.9rem;
+margin:16px 0 12px;
+}
+
+.room-card p{
+color:#dfd6cc;
+font-size:.95rem;
 }
 
 footer{
-
-padding:60px;
-
 text-align:center;
-
-color:#777;
-
-font-size:0.9rem;
-
+padding:50px 20px;
+font-size:.9rem;
+color:#746b61;
 }
 
 @media(max-width:700px){
-
-h1{
-
-font-size:2.6rem;
-
+h1{font-size:3rem}
+h2{font-size:1.6rem}
+.section-title{font-size:2.3rem}
+section{padding:60px 22px}
 }
-
-h2{
-
-font-size:1.6rem;
-
-}
-
-.subtitle{
-
-font-size:1rem;
-
-}
-
-}
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-
+<div class="hero">
+<p class="kicker">English • Turkish</p>
 <h1>The Understanding Method</h1>
-
 <h2>The Museum of English</h2>
-
 <p class="subtitle">
-
-Understand before you memorize.<br>
-
-Discover English through observation, comparison and communication.
-
+Understand before you memorize. Discover English through observation, comparison and communication.
 </p>
-
-<a class="enter-button" href="#welcome">
-
-Begin Your Journey
-
-</a>
-
+<a class="button" href="#welcome">Begin Your Journey</a>
+</div>
 </header>
 
 <section id="welcome">
-<section id="welcome">
+<h2 class="section-title">Welcome to the Museum</h2>
 
-<div class="room">
-
-<h3>Welcome</h3>
-
-<h4></h4>
-
-<p>
-Welcome to <strong>The Museum of English</strong>.
-</p>
-
-<p>
-This is not an exam.
-</p>
-
-<p>
-This is not a traditional English course.
-</p>
-
-<p>
-This website has been created to help you discover how English works while helping your teacher understand your current level.
-</p>
-
-<p>
-You do not need to be perfect.
-</p>
-
-<p>
-Take your time.
-Read.
-Observe.
-Compare.
-Think.
-Answer.
-Enjoy your journey.
-</p>
-
-<hr>
-
-<h4></h4>
-
-<p>
-<strong>İngilizce Müzesi'ne hoş geldiniz.</strong>
-</p>
-
-<p>
-Bu bir sınav değildir.
-</p>
-
-<p>
-Bu geleneksel bir İngilizce kursu değildir.
-</p>
-
-<p>
-Bu web sitesi, İngilizcenin nasıl çalıştığını keşfetmenize yardımcı olurken öğretmeninizin mevcut seviyenizi anlamasına da yardımcı olmak için hazırlanmıştır.
-</p>
-
-<p>
-Mükemmel olmanız gerekmiyor.
-</p>
-
-<p>
-Acele etmeyin.
-Okuyun.
-Gözlemleyin.
-Karşılaştırın.
-Düşünün.
-Cevap verin.
-Yolculuğun tadını çıkarın.
-</p>
-
+<div class="card">
+<h3 class="lang-title">English</h3>
+<p>Welcome to <strong>The Museum of English</strong>.</p>
+<p>This is not an exam. This is not a traditional English course.</p>
+<p>This website was created to help you explore how English works while helping your teacher understand your current level.</p>
+<p>Take your time. Read slowly. Observe. Compare. Think. Answer naturally.</p>
+<p>The goal is not perfection. The goal is understanding.</p>
 </div>
 
+<div class="card">
+<h3 class="lang-title">Türkçe</h3>
+<p><strong>İngilizce Müzesi'ne hoş geldiniz.</strong></p>
+<p>Bu bir sınav değildir. Bu geleneksel bir İngilizce kursu değildir.</p>
+<p>Bu web sitesi, İngilizcenin nasıl çalıştığını keşfetmenize yardımcı olurken öğretmeninizin mevcut seviyenizi anlamasına da yardımcı olmak için hazırlanmıştır.</p>
+<p>Acele etmeyin. Yavaş okuyun. Gözlemleyin. Karşılaştırın. Düşünün. Doğal bir şekilde cevap verin.</p>
+<p>Amaç mükemmellik değildir. Amaç anlamaktır.</p>
+</div>
 </section>
-  <section id="rooms">
 
-<div class="room">
+<section id="rooms">
+<h2 class="section-title">Museum Rooms</h2>
 
-<h3>Museum Rooms</h3>
-
-<p>
-Choose a room. Read slowly. Use the English and Turkish explanations to help you answer.
-</p>
-
-<p>
-Bir oda seçin. Yavaş okuyun. Cevap vermek için İngilizce ve Türkçe açıklamaları kullanın.
-</p>
-
-<div class="room-list">
-
-<div class="museum-card">
-<h4>Room I</h4>
-<h5>Why Learn a Language?</h5>
-<p>Before grammar, we begin with meaning, confidence and curiosity.</p>
+<div class="card">
+<h3 class="lang-title">English</h3>
+<p>Choose a room. Each room gives you explanations, examples and questions. Your answers will help your teacher understand your English.</p>
 </div>
 
-<div class="museum-card">
-<h4>Room II</h4>
-<h5>Understanding Language</h5>
+<div class="card">
+<h3 class="lang-title">Türkçe</h3>
+<p>Bir oda seçin. Her oda size açıklamalar, örnekler ve sorular sunar. Cevaplarınız öğretmeninizin İngilizce seviyenizi anlamasına yardımcı olacaktır.</p>
+</div>
+
+<div class="rooms">
+
+<div class="room-card">
+<small>Room I</small>
+<h3>Why Learn a Language?</h3>
+<p>Meaning, confidence, curiosity and the reason we learn languages.</p>
+</div>
+
+<div class="room-card">
+<small>Room II</small>
+<h3>Understanding Language</h3>
 <p>What is a sentence? What is a subject, verb and object?</p>
 </div>
 
-<div class="museum-card">
-<h4>Room III</h4>
-<h5>Understanding Grammar</h5>
+<div class="room-card">
+<small>Room III</small>
+<h3>Understanding Grammar</h3>
 <p>Pronouns, to be, have, like, can, do, questions, present, past and future.</p>
 </div>
 
-<div class="museum-card">
-<h4>Room IV</h4>
-<h5>Understanding Words</h5>
+<div class="room-card">
+<small>Room IV</small>
+<h3>Understanding Words</h3>
 <p>Useful English vocabulary with Turkish translations and examples.</p>
 </div>
 
-<div class="museum-card">
-<h4>Room V</h4>
-<h5>Conversation</h5>
-<p>Short, natural dialogues to help you speak with confidence.</p>
+<div class="room-card">
+<small>Room V</small>
+<h3>Conversation</h3>
+<p>Short natural dialogues to help you communicate with confidence.</p>
 </div>
 
-<div class="museum-card">
-<h4>Room VI</h4>
-<h5>Understanding Yourself</h5>
-<p>A gentle English evaluation. Not an exam. A way to discover your level.</p>
-</div>
-
+<div class="room-card">
+<small>Room VI</small>
+<h3>Understanding Yourself</h3>
+<p>A gentle evaluation. Not an exam. A way to discover your English.</p>
 </div>
 
 </div>
-
-  </section>
+</section>
 
 <footer>
-
-The Understanding Method © 2026
-
+The Understanding Method • The Museum of English
 </footer>
 
 </body>
-
 </html>
