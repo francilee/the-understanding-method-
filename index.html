@@ -3,89 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Understanding Method | The Museum of English</title>
+<title>The Understanding Method</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#f5efe6;color:#242220;font-family:Inter,sans-serif;line-height:1.8}
+header{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 24px;background:linear-gradient(rgba(245,239,230,.92),rgba(245,239,230,.98)),radial-gradient(circle at top left,#c7a06a,transparent 35%),radial-gradient(circle at bottom right,#66725a,transparent 35%)}
+.hero{max-width:850px}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:.75rem;color:#7a6652;margin-bottom:24px}
+h1{font-family:"Cormorant Garamond",serif;font-size:4rem;line-height:1.05;margin-bottom:18px}
+h2{font-family:"Cormorant Garamond",serif;font-size:2.4rem;line-height:1.1;margin-bottom:24px}
+h3{font-family:"Cormorant Garamond",serif;font-size:1.8rem;margin-bottom:12px;color:#66725a}
+p{margin-bottom:14px}
+section{max-width:980px;margin:auto;padding:70px 24px}
+.card{background:#fffaf4;border:1px solid #e0d4c6;border-radius:24px;padding:26px;margin:22px 0;box-shadow:0 14px 32px rgba(45,36,28,.06)}
+.room{background:#242220;color:#f6f0e8;border-radius:28px;padding:28px;margin:24px 0}
+.room h3{color:#f6f0e8}
+.room small{color:#c7a06a;letter-spacing:3px;text-transform:uppercase}
+.room p{color:#dfd6cc}
+.btn{display:inline-block;margin-top:18px;padding:14px 28px;border:1px solid #7a6652;border-radius:999px;color:#7a6652;text-decoration:none;font-weight:500}
+.btn:hover{background:#7a6652;color:white}
+.form-btn{background:#242220;color:#f6f0e8;border-color:#242220}
+.form-btn:hover{background:#c7a06a;color:#242220}
+.vocab{columns:2;list-style:none;margin-top:10px}
+.vocab li{margin-bottom:8px}
+footer{text-align:center;padding:45px 20px;color:#746b61;font-size:.9rem}
+@media(max-width:700px){h1{font-size:3rem}h2{font-size:2rem}.vocab{columns:1}section{padding:55px 22px}}
+</style>
+</head>
 
-html{
-  scroll-behavior:smooth;
-}
+<body>
 
-body{
-  background:#f5efe6;
-  color:#252321;
-  font-family:'Inter',sans-serif;
-  line-height:1.8;
-}
+<header>
+<div class="hero">
+<p class="kicker">English • Turkish</p>
+<h1>The Understanding Method</h1>
+<h2>The Museum of English</h2>
+<p>Understand before you memorize.</p>
+<p><em>Ezberlemeden önce anlamak.</em></p>
+<a class="btn" href="#start">Welcome. Start here</a>
+</div>
+</header>
 
-header{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:70px 24px;
-  background:
-    linear-gradient(rgba(245,239,230,.90),rgba(245,239,230,.98)),
-    radial-gradient(circle at top left,#c7a06a,transparent 32%),
-    radial-gradient(circle at bottom right,#66725a,transparent 34%);
-}
+<section id="start">
+<h2>Welcome. Start Here</h2>
 
-.hero{
-  max-width:850px;
-}
+<div class="card">
+<h3>English</h3>
+<p>This webpage is not an exam.</p>
+<p>It is a calm English review to help you understand English and help your teacher understand your current level.</p>
+<p>Please read slowly. Use the Turkish explanations when you need them.</p>
+<p>At the end, you will open the Visitor’s Notebook and answer some questions.</p>
+<p>There are no perfect answers. The goal is communication.</p>
+</div>
 
-.kicker{
-  letter-spacing:4px;
-  text-transform:uppercase;
-  font-size:.78rem;
-  color:#7a6652;
-  margin-bottom:28px;
-}
+<div class="card">
+<h3>Türkçe</h3>
+<p>Bu web sayfası bir sınav değildir.</p>
+<p>Bu, İngilizceyi anlamanıza yardımcı olmak ve öğretmeninizin mevcut seviyenizi görmesini sağlamak için hazırlanmış sakin bir İngilizce tekrar sayfasıdır.</p>
+<p>Lütfen yavaş okuyun. İhtiyacınız olduğunda Türkçe açıklamaları kullanın.</p>
+<p>En sonda Ziyaretçi Defteri’ni açıp bazı soruları cevaplayacaksınız.</p>
+<p>Mükemmel cevaplar beklenmiyor. Amaç iletişim kurmaktır.</p>
+</div>
+</section>
 
-h1{
-  font-family:'Cormorant Garamond',serif;
-  font-size:4.5rem;
-  font-weight:600;
-  line-height:1.05;
-  margin-bottom:22px;
-}
+<section>
+<h2>Room I — How English Works</h2>
 
-h2{
-  font-family:'Cormorant Garamond',serif;
-  font-size:2.2rem;
-  font-weight:400;
-  color:#6f5e49;
-  margin-bottom:28px;
-}
+<div class="room">
+<small>Understanding Language</small>
+<h3>Sentence • Subject • Verb • Object</h3>
+<p>A sentence is a complete idea. In English, many sentences use this order: Subject + Verb + Object.</p>
+<p><em>Cümle tamamlanmış bir fikirdir. İngilizcede birçok cümle şu sırayı kullanır: Özne + Fiil + Nesne.</em></p>
+<p><strong>I drink coffee.</strong> (Ben kahve içerim.)</p>
+<p>I = subject / özne. Drink = verb / fiil. Coffee = object / nesne.</p>
+</div>
+</section>
 
-.subtitle{
-  font-size:1.12rem;
-  max-width:700px;
-  margin:0 auto 38px;
-  color:#4d4a46;
-}
+<section>
+<h2>Room II — Grammar Review</h2>
 
-.button{
-  display:inline-block;
-  padding:16px 36px;
-  border:1px solid #7a6652;
-  border-radius:999px;
-  color:#7a6652;
-  text-decoration:none;
-  font-weight:500;
-}
+<div class="card">
+<h3>Core structures</h3>
+<p><strong>I am...</strong> (Ben...) — identity, feeling, job.</p>
+<p><strong>I have...</strong> (Benim ... var.) — possession, family, objects.</p>
+<p><strong>I like...</strong> (... severim / hoşlanırım.) — preferences.</p>
+<p><strong>I can...</strong> (... yapabilirim.) — ability.</p>
+<p><strong>I do...</strong> (... yaparım.) — action; also used for questions: <strong>Do you...?</strong> (... yapar mısın? / ... sever misin?)</p>
+</div>
 
-.button:hover{
-  background:#7a6652;
-  color:#fff;
-}
+<div class="card">
+<h3>Time in English</h3>
+<p><strong>Present:</strong> I work every day. (Her gün çalışırım.)</p>
+<p><strong>Now:</strong> I am working now. (Şu anda çalışıyorum.)</p>
+<p><strong>Past:</strong> I worked yesterday. (Dün çalıştım.)</p>
+<p><strong>Future:</strong> I am going to work tomorrow. (Yarın çalışacağım.)</p>
+</div>
+
+<div class="card">
+<h3>Question words</h3>
+<p><strong>What?</strong> (Ne?)</p>
+<p><strong>Where?</strong> (Nerede? / Nereye?)</p>
+<p><strong>When?</strong> (Ne zaman?)</p>
+<p><strong>Why?</strong> (Neden?)</p>
+<p><strong>Who?</strong> (Kim?)</p>
+<p><strong>How?</strong> (Nasıl?)</p>
+</div>
+</section>
+
+<section>
+<h2>Room III — Vocabulary Support</h2>
+
+<div class="card">
+<h3>Useful words</h3>
+<ul class="vocab">
+<li>today (bugün)</li>
+<li>yesterday (dün)</li>
+<li>tomorrow (yarın)</li>
+<li>work (çalışmak)</li>
+<li>study (ders çalışmak)</li>
+<li>learn (öğrenmek)</li>
+<li>travel (seyahat etmek)</li>
+<li>friend (arkadaş)</li>
+<li>family (aile)</li>
+<li>city (şehir)</li>
+<li>home (ev)</li>
+<li>camera (kamera)</li>
+<li>video (video)</li>
+<li>photo (fotoğraf)</li>
+<li>memory (anı)</li>
+<li>feel (hissetmek)</li>
+<li>happy (mutlu)</li>
+<li>difficult (zor)</li>
+<li>easy (kolay)</li>
+<li>interesting (ilginç)</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Room IV — Communication</h2>
+
+<div class="card">
+<h3>Useful phrases</h3>
+<p><strong>I think...</strong> (Bence...)</p>
+<p><strong>I don’t know, but I think...</strong> (Bilmiyorum ama bence...)</p>
+<p><strong>For me...</strong> (Benim için...)</p>
+<p><strong>I would like to...</strong> (... yapmak isterim.)</p>
+<p><strong>It is difficult for me to...</strong> (Benim için ... yapmak zor.)</p>
+</div>
+</section>
+
+<section>
+<h2>Visitor’s Notebook</h2>
+
+<div class="card">
+<h3>English</h3>
+<p>Now you can answer the questions. Use this webpage for support.</p>
+<p>Your answers will help your teacher understand your English level today.</p>
+<a class="btn form-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd0QNrXQDyjyHN8ksSAxofwK_AQXq_FhBCOTMhh5D0o15lP1Q/viewform?usp=publish-editor" target="_blank">Open the Visitor’s Notebook</a>
+</div>
+
+<div class="card">
+<h3>Türkçe</h3>
+<p>Şimdi soruları cevaplayabilirsiniz. Bu web sayfasını destek olarak kullanabilirsiniz.</p>
+<p>Cevaplarınız öğretmeninizin bugünkü İngilizce seviyenizi anlamasına yardımcı olacaktır.</p>
+</div>
+</section>
+
+<footer>
+The Understanding Method • The Museum of English<br>
+Review first. Evaluate gently.
+</footer>
+
+</body>
+</html>
