@@ -12,7 +12,7 @@
 html{scroll-behavior:smooth}
 body{background:#f5efe6;color:#242220;font-family:Inter,sans-serif;line-height:1.8}
 header{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 24px;background:linear-gradient(rgba(245,239,230,.92),rgba(245,239,230,.98)),radial-gradient(circle at top left,#c7a06a,transparent 35%),radial-gradient(circle at bottom right,#66725a,transparent 35%)}
-.hero{max-width:850px}
+.hero{max-width:880px}
 .kicker{letter-spacing:4px;text-transform:uppercase;font-size:.75rem;color:#7a6652;margin-bottom:24px}
 h1{font-family:"Cormorant Garamond",serif;font-size:4rem;line-height:1.05;margin-bottom:18px}
 h2{font-family:"Cormorant Garamond",serif;font-size:2.4rem;line-height:1.1;margin-bottom:24px}
@@ -24,12 +24,14 @@ section{max-width:980px;margin:auto;padding:70px 24px}
 .room h3{color:#f6f0e8}
 .room small{color:#c7a06a;letter-spacing:3px;text-transform:uppercase}
 .room p{color:#dfd6cc}
-.btn{display:inline-block;margin-top:18px;padding:14px 28px;border:1px solid #7a6652;border-radius:999px;color:#7a6652;text-decoration:none;font-weight:500}
+.btn{display:inline-block;margin:12px 6px 0;padding:14px 28px;border:1px solid #7a6652;border-radius:999px;color:#7a6652;text-decoration:none;font-weight:500}
 .btn:hover{background:#7a6652;color:white}
+.secondary{background:transparent;border-color:#8a745f;color:#8a745f}
 .form-btn{background:#242220;color:#f6f0e8;border-color:#242220}
 .form-btn:hover{background:#c7a06a;color:#242220}
 .vocab{columns:2;list-style:none;margin-top:10px}
 .vocab li{margin-bottom:8px}
+.example{background:#f2e6d8;border-left:5px solid #c7a06a;padding:16px 18px;border-radius:14px;margin:18px 0}
 footer{text-align:center;padding:45px 20px;color:#746b61;font-size:.9rem}
 @media(max-width:700px){h1{font-size:3rem}h2{font-size:2rem}.vocab{columns:1}section{padding:55px 22px}}
 </style>
@@ -44,7 +46,9 @@ footer{text-align:center;padding:45px 20px;color:#746b61;font-size:.9rem}
 <h2>The Museum of English</h2>
 <p>Understand before you memorize.</p>
 <p><em>Ezberlemeden önce anlamak.</em></p>
+
 <a class="btn" href="#start">Welcome. Start here</a>
+<a class="btn secondary" href="seminay.html">📖 Previous Visit</a>
 </div>
 </header>
 
@@ -71,15 +75,40 @@ footer{text-align:center;padding:45px 20px;color:#746b61;font-size:.9rem}
 </section>
 
 <section>
+<h2>Room 0 — Previous Visit</h2>
+
+<div class="card">
+<h3>English</h3>
+<p>Every museum has an archive. This button opens the first English page prepared before this Museum.</p>
+<p>You can visit it again if you want to review the first material.</p>
+<a class="btn secondary" href="seminay.html">Open Previous Visit</a>
+</div>
+
+<div class="card">
+<h3>Türkçe</h3>
+<p>Her müzenin bir arşivi vardır. Bu buton, bu Müze’den önce hazırlanmış ilk İngilizce sayfasını açar.</p>
+<p>İsterseniz ilk materyali tekrar inceleyebilirsiniz.</p>
+</div>
+</section>
+
+<section>
 <h2>Room I — How English Works</h2>
 
 <div class="room">
 <small>Understanding Language</small>
 <h3>Sentence • Subject • Verb • Object</h3>
-<p>A sentence is a complete idea. In English, many sentences use this order: Subject + Verb + Object.</p>
-<p><em>Cümle tamamlanmış bir fikirdir. İngilizcede birçok cümle şu sırayı kullanır: Özne + Fiil + Nesne.</em></p>
+<p>A sentence is a complete idea. English often needs a clear subject because English depends strongly on word order.</p>
+<p><em>Cümle tamamlanmış bir fikirdir. İngilizce çoğu zaman açık bir özneye ihtiyaç duyar çünkü İngilizce büyük ölçüde kelime sırasına dayanır.</em></p>
+
+<div class="example">
 <p><strong>I drink coffee.</strong> (Ben kahve içerim.)</p>
-<p>I = subject / özne. Drink = verb / fiil. Coffee = object / nesne.</p>
+<p><strong>I</strong> = subject / özne</p>
+<p><strong>drink</strong> = verb / fiil</p>
+<p><strong>coffee</strong> = object / nesne</p>
+</div>
+
+<p>In Turkish, the verb usually comes near the end. In English, the verb usually comes soon after the subject.</p>
+<p><em>Türkçede fiil genellikle cümlenin sonuna yakın gelir. İngilizcede ise fiil genellikle özneden hemen sonra gelir.</em></p>
 </div>
 </section>
 
@@ -87,97 +116,25 @@ footer{text-align:center;padding:45px 20px;color:#746b61;font-size:.9rem}
 <h2>Room II — Grammar Review</h2>
 
 <div class="card">
-<h3>Core structures</h3>
-<p><strong>I am...</strong> (Ben...) — identity, feeling, job.</p>
-<p><strong>I have...</strong> (Benim ... var.) — possession, family, objects.</p>
-<p><strong>I like...</strong> (... severim / hoşlanırım.) — preferences.</p>
-<p><strong>I can...</strong> (... yapabilirim.) — ability.</p>
-<p><strong>I do...</strong> (... yaparım.) — action; also used for questions: <strong>Do you...?</strong> (... yapar mısın? / ... sever misin?)</p>
+<h3>Core Structures</h3>
+<p><strong>I am...</strong> (Ben...) — identity, feeling, job, nationality, location.</p>
+<p>English uses <strong>am / is / are</strong> where Turkish often uses endings.</p>
+<p><em>İngilizce, Türkçede çoğu zaman eklerle verilen anlamlar için am / is / are kullanır.</em></p>
+
+<div class="example">
+<p>I am tired. (Yorgunum.)</p>
+<p>She is Turkish. (O Türk.)</p>
+<p>We are ready. (Hazırız.)</p>
 </div>
 
-<div class="card">
-<h3>Time in English</h3>
-<p><strong>Present:</strong> I work every day. (Her gün çalışırım.)</p>
-<p><strong>Now:</strong> I am working now. (Şu anda çalışıyorum.)</p>
-<p><strong>Past:</strong> I worked yesterday. (Dün çalıştım.)</p>
-<p><strong>Future:</strong> I am going to work tomorrow. (Yarın çalışacağım.)</p>
+<p><strong>I have...</strong> (Benim ... var.) — possession, family, objects, time, ideas.</p>
+<p>English often focuses on the person who possesses something.</p>
+<p><em>İngilizce çoğu zaman bir şeye sahip olan kişiye odaklanır.</em></p>
+
+<div class="example">
+<p>I have a camera. (Bir kameram var.)</p>
+<p>I have time. (Zamanım var.)</p>
+<p>She has an idea. (Onun bir fikri var.)</p>
 </div>
 
-<div class="card">
-<h3>Question words</h3>
-<p><strong>What?</strong> (Ne?)</p>
-<p><strong>Where?</strong> (Nerede? / Nereye?)</p>
-<p><strong>When?</strong> (Ne zaman?)</p>
-<p><strong>Why?</strong> (Neden?)</p>
-<p><strong>Who?</strong> (Kim?)</p>
-<p><strong>How?</strong> (Nasıl?)</p>
-</div>
-</section>
-
-<section>
-<h2>Room III — Vocabulary Support</h2>
-
-<div class="card">
-<h3>Useful words</h3>
-<ul class="vocab">
-<li>today (bugün)</li>
-<li>yesterday (dün)</li>
-<li>tomorrow (yarın)</li>
-<li>work (çalışmak)</li>
-<li>study (ders çalışmak)</li>
-<li>learn (öğrenmek)</li>
-<li>travel (seyahat etmek)</li>
-<li>friend (arkadaş)</li>
-<li>family (aile)</li>
-<li>city (şehir)</li>
-<li>home (ev)</li>
-<li>camera (kamera)</li>
-<li>video (video)</li>
-<li>photo (fotoğraf)</li>
-<li>memory (anı)</li>
-<li>feel (hissetmek)</li>
-<li>happy (mutlu)</li>
-<li>difficult (zor)</li>
-<li>easy (kolay)</li>
-<li>interesting (ilginç)</li>
-</ul>
-</div>
-</section>
-
-<section>
-<h2>Room IV — Communication</h2>
-
-<div class="card">
-<h3>Useful phrases</h3>
-<p><strong>I think...</strong> (Bence...)</p>
-<p><strong>I don’t know, but I think...</strong> (Bilmiyorum ama bence...)</p>
-<p><strong>For me...</strong> (Benim için...)</p>
-<p><strong>I would like to...</strong> (... yapmak isterim.)</p>
-<p><strong>It is difficult for me to...</strong> (Benim için ... yapmak zor.)</p>
-</div>
-</section>
-
-<section>
-<h2>Visitor’s Notebook</h2>
-
-<div class="card">
-<h3>English</h3>
-<p>Now you can answer the questions. Use this webpage for support.</p>
-<p>Your answers will help your teacher understand your English level today.</p>
-<a class="btn form-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd0QNrXQDyjyHN8ksSAxofwK_AQXq_FhBCOTMhh5D0o15lP1Q/viewform?usp=publish-editor" target="_blank">Open the Visitor’s Notebook</a>
-</div>
-
-<div class="card">
-<h3>Türkçe</h3>
-<p>Şimdi soruları cevaplayabilirsiniz. Bu web sayfasını destek olarak kullanabilirsiniz.</p>
-<p>Cevaplarınız öğretmeninizin bugünkü İngilizce seviyenizi anlamasına yardımcı olacaktır.</p>
-</div>
-</section>
-
-<footer>
-The Understanding Method • The Museum of English<br>
-Review first. Evaluate gently.
-</footer>
-
-</body>
-</html>
+<p><
